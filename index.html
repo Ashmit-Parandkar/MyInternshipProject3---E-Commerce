@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shop Stopper</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+		integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+		crossorigin="anonymous"></script>
+
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/homepageStyles.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+
+	<script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top" width="35px" height="35px" align="right">⇑</button>
+
+
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#" style="    padding: 0 15vw 0 8vw;
+			margin: 3vh 0 10vh 0;
+			font-size: 30px;">Shop Stopper</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 10vh;">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Products
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#maincontainer">Electronics</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#clothing">Clothing</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cartmain">Cart</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="2" style="display: flex;align-items: center;justify-content: center;">
+		<div id="carouselExampleIndicators" class="carousel slide" style="width: 90%">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+					aria-label="Slide 4"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/img2.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/img1.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/img4.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="images/img3.png" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" id="maincontainer">
+		<h1 style="margin-top: 10vh;">Electronics</h1>
+		<div align="center" id="row1" class="row">
+			<div class="col-md-4" style="padding-bottom: 15px;">
+				<img src="images/pixel-2.png">
+				<div id="pro-info">
+					<p class="product-name">Google Pixel</p>
+					<p class="product-price"> Rs. 45000</p>
+					<button class="btn btn-secondary" id="btn1">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="images/iphone-7.png">
+				<div id="pro-info">
+					<p class="product-name">Iphone 7</p>
+					<p class="product-price"> Rs. 60000</p>
+					<button class="btn btn-secondary" id="btn2">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="images/macbook-pro.png">
+				<div id="pro-info">
+					<p class="product-name">MacBook Pro</p>
+					<p class="product-price"> Rs. 130000</p>
+					<button class="btn btn-secondary" id="btn3">Buy Now</button>
+				</div>
+			</div>
+		</div>
+		<div align="center" id="row1" class="row">
+			<div class="col-md-4">
+				<img src="images/sony-headphones.png">
+				<div id="pro-info">
+					<p class="product-name">Sony Headphones</p>
+					<p class="product-price"> Rs. 12000</p>
+					<button class="btn btn-secondary" id="btn4">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="images/ps4.png">
+				<div id="pro-info">
+					<p class="product-name">PlayStation 4</p>
+					<p class="product-price"> Rs. 60000</p>
+					<button class="btn btn-secondary" id="btn5">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="images/surface-pro-7.png">
+				<div id="pro-info">
+					<p class="product-name">Microsoft Surface</p>
+					<p class="product-price"> Rs. 55000</p>
+					<button class="btn btn-secondary" id="btn6">Buy Now</button>
+				</div>
+			</div>
+		</div>
+		<h1 id="clothing" style="margin-top: 10vh;">Clothing</h1>
+		<div align="center" id="row1" class="row">
+			<div class="col-md-4">
+				<img
+					src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg">
+				<div id="pro-info">
+					<p class="product-name">Men's T-Shirt</p>
+					<p class="product-price"> Rs. 800</p>
+					<button class="btn btn-secondary" id="btn7">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img
+					src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2060340/2017/9/14/11505387708574-Puma-Men-Black-Solid-Sporty-Jacket-371505387708496-1.jpg">
+				<div id="pro-info">
+					<p class="product-name">Men's Jacket</p>
+					<p class="product-price"> Rs. 3000</p>
+					<button class="btn btn-secondary" id="btn8">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img
+					src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/productimage/2018/9/19/b1373b00-37d4-41a0-a908-5d742a68d3661537343756229-1.jpg">
+				<div id="pro-info">
+					<p class="product-name">Men's Shoes</p>
+					<p class="product-price"> Rs. 5000</p>
+					<button class="btn btn-secondary" id="btn9">Buy Now</button>
+				</div>
+			</div>
+		</div>
+
+		<div align="center" id="row1" class="row">
+			<div class="col-md-4">
+				<img
+					src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/3854721/2018/3/12/11520844673915-BARESKIN-Women-Black-Solid-Lightweight-Leather-Jacket-7761520844673718-1.jpg">
+				<div id="pro-info">
+					<p class="product-name">Women's Jacket</p>
+					<p class="product-price"> Rs. 4000</p>
+					<button class="btn btn-secondary" id="btn10">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img
+					src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/5649908/2018/5/10/6bfe80cd-2f55-42bc-aa7f-e0d6c9e2ac531525936414747-SASSAFRAS-Women-Blue-Solid-Shirt-Dress-3831525936414532-1.jpg">
+				<div id="pro-info">
+					<p class="product-name">Women's dress</p>
+					<p class="product-price"> Rs. 2500</p>
+					<button class="btn btn-secondary" id="btn11">Buy Now</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<img src="images/suit.jpeg">
+				<div id="pro-info">
+					<p class="product-name">Men's Suit</p>
+					<p class="product-price"> Rs. 9000</p>
+					<button class="btn btn-secondary" id="btn12">Buy Now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cartmain" class="container-fluid">
+		<div class="container" id="cart">
+			<div class="row">
+				<div class="col-md-12" id="cart-heading" align="center">
+					Shopping Cart
+				</div>
+			</div>
+			<hr>
+			<div class="row" id="table-row">
+				<table class="table table-striped" id="item-table">
+					<thead>
+						<tr>
+							<th>Item Id</th>
+							<th>Product Name</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody id="item-table-body">
+
+					</tbody>
+				</table>
+
+			</div>
+			<div class="row" align="center">
+				<div class="col-md-12">
+					<div style="font-size: 1.6rem;">Grand Total : <label id="totalLabel">0</label>
+						<br>
+						<a href="./success.html"><button class="btn btn-success">Place Order</button></a>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+		</div>
+	</div>
+
+	<div id="4" id="about">
+		<footer id="about">
+			<section>
+				<div id="containerFooter">
+
+					<div id="webFooter">
+						<h3> online store </h3>
+						<p> men clothing </p>
+						<p> women clothing </p>
+						<p> men accessories </p>
+						<p> women accessories </p>
+					</div>
+					<div id="webFooter">
+						<h3> helpful link </h3>
+						<p> home </p>
+						<p> about </p>
+						<p> contact </p>
+					</div>
+					<div id="webFooter">
+						<h3> partners </h3>
+						<p> zara </p>
+						<p> pantaloons </p>
+						<p> levis </p>
+						<p> ucb </p>
+						<p> + many more </p>
+					</div>
+					<div id="webFooter">
+						<h3> Address </h3>
+						<p> Jubilee Hills </p>
+						<p> Hyderabad </p>
+						<p> Telangana </p>
+						<p> India </p>
+					</div>
+				</div>
+				<div id="credit">
+					<p>&copy;ShopStopper 2023</p>
+				</div>
+			</section>
+
+		</footer>
+	</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
